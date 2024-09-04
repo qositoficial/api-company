@@ -1,4 +1,4 @@
-import { Company } from "../entity/company.entity";
+import { Company } from "../entity/CompanyEntity";
 
 export interface CompanyGateway {
     save(company: Company): Promise<void>;
