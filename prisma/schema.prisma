@@ -9,6 +9,17 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model Company {
+  id     String  @id
+  name   String
+  cnpj   Int
+  phone  Int
+  email  String
+  status Boolean
+
+  @@map("companies")
 }
