@@ -14,11 +14,12 @@ datasource db {
 }
 
 model Company {
-  id    String @id
-  cnpj  String
-  name  String
-  phone Int
-  email String
+  id     String  @id
+  name   String
+  cnpj   Int
+  phone  Int
+  email  String
+  status Boolean
 
   @@map("companies")
 }
