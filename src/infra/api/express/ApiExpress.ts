@@ -1,6 +1,7 @@
 import type { Api } from "../Api";
 import express, { Express } from "express"
 import type { Route } from "./routes/Route";
+import { logger } from "../../../utils/Logger";
 
 export class ApiExpress implements Api {
     private app: Express
@@ -27,8 +28,8 @@ export class ApiExpress implements Api {
 
     public start(port: number) {
         this.app.listen(port, () => {
-            console.log(`Server running on port ${port}`)
-            this.listRoutes()
+            logger.info(`Server running on port ${port}`)
+            // this.listRoutes()
         })
     }
 
@@ -40,6 +41,6 @@ export class ApiExpress implements Api {
             }
         })
 
-        console.log(routes)
+        logger.info(routes)
     }
 }

@@ -1,16 +1,16 @@
 export type CompanyProps = {
     id: string,
     name: string,
-    cnpj: number,
-    phone: number,
+    cnpj: string,
+    phone: string,
     email: string,
     status: boolean
 }
 
 type CreateCompanyProps = {
     name: string,
-    cnpj: number,
-    phone: number,
+    cnpj: string,
+    phone: string,
     email: string,
 }
 
