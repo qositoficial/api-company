@@ -27,7 +27,7 @@ export class CreateCompanyRoute implements Route {
             const input: CreateCompanyInputDTO = {
                 name, cnpj, phone, email
             }
-
+            
             const output: CreateCompanyResponseDTO = await this.createCompanyService.execute(input)
 
             const responseBody = this.present(output)

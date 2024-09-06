@@ -6,8 +6,8 @@ export type ListCompaniesResponseDTO = {
     companies: {
         id: string,
         name: string,
-        cnpj: number,
-        phone: number,
+        cnpj: string,
+        phone: string,
         email: string,
         status: boolean
     }[]

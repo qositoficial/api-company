@@ -3,22 +3,22 @@ GET http://localhost:8000/companies
 
 ###
 POST http://localhost:8000/company
-Content-Type: application/json
+content-type: application/json
 
 {
-    "name": "QOS IT - SOLUCOES EM SERVICOS DE TECNOLOGIA LTDA",
+    "namse": "QOS IT - SOLUCOES EM SERVICOS DE TECNOLOGIA LTDA",
     "cnpj": 21950170000107,
     "phone": 4140637066,
-    "email": "contato@qosit.com.br",
+    "email": "contato@qosit.com.br"
 }
 
 ###
 POST http://localhost:8000/company
-Content-Type: application/json
+content-type: application/json
 
 {
-    "name": "JOAO DA ESQUINA LTDA",
-    "cnpj": 23123654000178,
-    "phone": 4133322223,
-    "email": "contato@joaodaesquina.com.br",
+    "name": "ESCOLA RAIO DE SOL LTDA",
+    "cnpj": "21123456000798",
+    "phone": "41999998888",
+    "email": "contato@escolaraiodesol.com.br"
 }

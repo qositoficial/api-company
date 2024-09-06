@@ -4,8 +4,8 @@ import type { UseCase } from "../UseCase"
 
 export type CreateCompanyInputDTO = {
     name: string,
-    cnpj: number,
-    phone: number,
+    cnpj: string,
+    phone: string,
     email: string,
 }
 

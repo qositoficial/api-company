@@ -16,8 +16,8 @@ datasource db {
 model Company {
   id     String  @id
   name   String
-  cnpj   Int
-  phone  Int
+  cnpj   String
+  phone  String
   email  String
   status Boolean
 
